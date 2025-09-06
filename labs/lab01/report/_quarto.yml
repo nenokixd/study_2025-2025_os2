@@ -4,3 +4,8 @@ project:
 
 standalone: true
 self-contained: true
+
+format:
+  docx: default
+  pdf: default
+

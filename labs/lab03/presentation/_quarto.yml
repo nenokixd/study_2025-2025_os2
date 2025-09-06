@@ -1,6 +1,23 @@
 project:
-  title: "presentation"
-  output-dir: "_presentation"
+  type: book
+  output-dir: _output
 
-standalone: true
-self-contained: true
+format:
+  pdf:
+    beamer:
+      latex-engine: xelatex
+      theme: metropolis
+      toc: true
+      toc-title: "Содержание"
+      number-sections: true
+      slide_level: 2
+      aspectratio: 169
+      section-titles: true
+      themeoptions: progressbar=frametitle,sectionpage=progressbar,numbering=fraction
+      babel-lang: russian
+
+header-includes:
+  - \usepackage{fontspec}
+  - \setmainfont{Liberation Serif}  # поддержка кириллицы
+  - \usepackage{setspace}
+  - \renewcommand{\baselinestretch}{1.0} # регулирует межстрочный интервал
